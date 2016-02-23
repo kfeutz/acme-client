@@ -12,7 +12,8 @@
         "monolog/monolog": "^1.17",
         "php": ">=5.5",
         "psr/log": "^1",
-        "rdlowrey/auryn": "^1"
+        "rdlowrey/auryn": "^1",
+        "aws/aws-sdk-php": "2.*"
     },
     "license": "MIT",
     "authors": [

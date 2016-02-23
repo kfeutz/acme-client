@@ -23,6 +23,7 @@ class Setup implements Command {
 
     public function __construct(LoggerInterface $logger) {
         $this->logger = $logger;
+        date_default_timezone_set('America/Los_Angeles');
     }
 
     public function execute(Manager $args) {
@@ -43,6 +44,7 @@ class Setup implements Command {
         }
 
         $path = "account/key.pem";
+        //Overkill
         $bits = 4096;
 
         $keyStore = new KeyStore(dirname(dirname(__DIR__)) . "/data");
